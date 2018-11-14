@@ -48,6 +48,44 @@ var paperMapDirections: String?
 var navigate = paperMapDirections ?? gpsDirections
 
 // Range Operators
+// closed range operators
 
+for index in 0...4 { // Prints 5 times
+  print("\(index) times 3 is \(index * 3)")
+} 
+
+// half-open operator
+
+for index in 0..<4 { // prints 4 times because it stops BEFORE it reaches the 4
+    print("\(index) times 3 is \(index * 3)")
+}
+
+// NOT operator
+
+let itsAllowd = false
+
+if !itsAllowd { // exclamation point is "not". In this case it's not equal to true
+  print("Access Granted")
+}
+
+// && "and" operator
+
+let this = true
+let that = true
+if this && that { // both have to be true otherwise deny access
+  print("enter")
+} else {
+  print("Access Denied")
+}
+
+// || "or" operator
+
+let this = true
+let that = true
+if this || that { // only one has to be true otherwise deny access
+  print("enter")
+} else {
+  print("Access Denied")
+}
 
 
